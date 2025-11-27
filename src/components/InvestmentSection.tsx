@@ -29,7 +29,7 @@ export const InvestmentSection = () => {
             To be customized based on group size and location
           </p>
           
-          <div className="border-t border-border pt-6">
+          <div className="border-t border-border pt-6 mb-6">
             <h3 className="text-xl font-semibold mb-4 text-card-foreground">
               Package Includes:
             </h3>
@@ -41,6 +41,12 @@ export const InvestmentSection = () => {
                 </li>
               ))}
             </ul>
+          </div>
+          
+          <div className="border-t border-border pt-6 bg-primary/5 -mx-8 px-8 -mb-8 pb-8">
+            <p className="text-center text-2xl font-bold text-foreground">
+              OBT FEE: <span className="text-primary">INR 35,000</span> + GST
+            </p>
           </div>
         </Card>
       </div>

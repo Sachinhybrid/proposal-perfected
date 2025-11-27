@@ -22,15 +22,21 @@ export const ConclusionSection = () => {
             </p>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-              <Mail className="w-5 h-5 mr-2" />
-              Get in Touch
-            </Button>
-            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10">
-              <Phone className="w-5 h-5 mr-2" />
-              Schedule a Call
-            </Button>
+          <div className="space-y-6">
+            <div className="flex flex-col items-center gap-3 text-center">
+              <div className="flex items-center gap-2 text-lg">
+                <Mail className="w-5 h-5 text-primary" />
+                <a href="mailto:info@scaleonglobal.com" className="text-primary hover:underline font-medium">
+                  info@scaleonglobal.com
+                </a>
+              </div>
+              <div className="flex items-center gap-2 text-lg">
+                <Phone className="w-5 h-5 text-primary" />
+                <a href="tel:+918111990199" className="text-primary hover:underline font-medium">
+                  +91 8111990199
+                </a>
+              </div>
+            </div>
           </div>
         </Card>
       </div>
