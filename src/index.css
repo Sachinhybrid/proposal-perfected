@@ -109,3 +109,49 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+/* Print styles for PDF export */
+@media print {
+  @page {
+    size: A4;
+    margin: 1.5cm;
+  }
+
+  body {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  /* Hide elements not needed in PDF */
+  footer {
+    display: none;
+  }
+
+  /* Ensure sections start on new pages where appropriate */
+  section {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Keep cards together */
+  .card {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Remove shadows for cleaner print */
+  * {
+    box-shadow: none !important;
+  }
+
+  /* Ensure proper spacing between sections */
+  section {
+    margin-bottom: 2rem;
+  }
+
+  /* Optimize header for print */
+  header {
+    position: relative !important;
+    box-shadow: none !important;
+  }
+}
