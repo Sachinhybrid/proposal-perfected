@@ -1,12 +1,35 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { ProposalHeader } from "@/components/ProposalHeader";
+import { ProposalHero } from "@/components/ProposalHero";
+import { ObjectivesSection } from "@/components/ObjectivesSection";
+import { WhyOutboundSection } from "@/components/WhyOutboundSection";
+import { ProgramSchedule } from "@/components/ProgramSchedule";
+import { DeliverablesSection } from "@/components/DeliverablesSection";
+import { OutcomesSection } from "@/components/OutcomesSection";
+import { InvestmentSection } from "@/components/InvestmentSection";
+import { WhyChooseUsSection } from "@/components/WhyChooseUsSection";
+import { ConclusionSection } from "@/components/ConclusionSection";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <ProposalHeader />
+      <ProposalHero />
+      <ObjectivesSection />
+      <WhyOutboundSection />
+      <ProgramSchedule />
+      <DeliverablesSection />
+      <OutcomesSection />
+      <InvestmentSection />
+      <WhyChooseUsSection />
+      <ConclusionSection />
+      
+      <footer className="py-8 px-4 border-t border-border bg-muted/30">
+        <div className="container mx-auto text-center">
+          <p className="text-sm text-muted-foreground">
+            © 2025 SCALEON - The Growth Partner. All rights reserved.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 };
