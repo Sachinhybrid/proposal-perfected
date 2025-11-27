@@ -1,5 +1,6 @@
 import { ProposalHeader } from "@/components/ProposalHeader";
 import { ProposalHero } from "@/components/ProposalHero";
+import { ProgramFocusSection } from "@/components/ProgramFocusSection";
 import { ObjectivesSection } from "@/components/ObjectivesSection";
 import { WhyOutboundSection } from "@/components/WhyOutboundSection";
 import { ProgramSchedule } from "@/components/ProgramSchedule";
@@ -14,6 +15,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <ProposalHeader />
       <ProposalHero />
+      <ProgramFocusSection />
       <ObjectivesSection />
       <WhyOutboundSection />
       <ProgramSchedule />
